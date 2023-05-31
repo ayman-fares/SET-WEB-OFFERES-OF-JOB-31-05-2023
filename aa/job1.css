@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: #232427;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'poppins', sans-serif;
+
+
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.089);
+    align-items: center;
+    display: flex;
+    position: relative;
+    
+    border-bottom: 1px solid wheat;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 1px 1px 20px rgba(12, 12, 12, 0.993);
+
+}
+
+/*
+        header::before,header::after{
+            display: block;
+            content: '';
+            
+            position: absolute;
+            width:100%;
+            height: 100%;
+            background: #ffffff;
+            
+            z-index: -1;
+            animation: 1s ayman infinite;
+            
+        }
+            header::after{
+            background: #00ff40;
+            animation: 2s aymanfares infinite;
+        }
+        @keyframes ayman{
+            0%{
+                top: -9px;
+                left: -9px;
+                
+            }
+            12%{
+                top: -4px;
+                left: 4px;
+            }
+            25%{
+                top: 0px;
+                left: 9px;
+            }
+            37%{
+                top: 4px;
+                left: 4px;
+            }
+            50%{
+                top: 5px;
+                left: 0px;
+            }
+            62%{
+                top: 4px;
+                left: -4px;
+            }
+            75%{
+                top: 0px;
+                left: 9px;
+            }
+            87%{
+                top: -4px;
+                left: -4px;
+            }
+            100%{
+                top: -9px;
+                left: 0px;
+            }
+        }
+        
+            @keyframes aymanfares{
+                0%{
+                    top: -9px;
+                    left: -9px;
+                }
+                12%{
+                    top: -4px;
+                    left: 4px;
+                }
+                25%{
+                    top: 0px;
+                    left: 5px;
+                }
+                37%{
+                    top: 4px;
+                    left: 4px;
+                }
+                50%{
+                    top: 9px;
+                    left: 0px;
+                }
+                62%{
+                    top: 4px;
+                    left: -4px;
+                }
+                75%{
+                    top: 0px;
+                    left: 9px;
+                }
+                87%{
+                    top: -4px;
+                    left: -4px;
+                }
+                100%{
+                    top: -5px;
+                    left: 0px;
+                }
+         
+            }
+*/
+#main {
+    padding: 16px;
+    font-size: 30px;
+    margin-left: 1070px;
+    cursor: pointer;
+    text-align: end;
+    color: aliceblue;
+}
+
+.title {
+    position: absolute;
+    margin-left: 530px;
+    font-size: 4em;
+    color: #222;
+    text-shadow: 1px 1px 22px rgba(255, 255, 255, 0.178);
+    top: 6px;
+}
+
+.title::before {
+    content: attr(data-text);
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    animation: animatetitle 5s linear infinite;
+    filter: drop-shadow(1px 1px 30px #ffffff79)drop-shadow(1px 1px 30px #ffffff73);
+
+}
+
+@keyframes animatetitle {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+
+.mmimg {
+    width: 200px;
+    height: 80px;
+
+    margin-top: 5px;
+    margin-left: 20px;
+    filter: drop-shadow(1px 2px 5px rgb(0, 225, 255));
+}
+
+.s_nav .closebtn {
+
+
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-right: 153px;
+
+
+}
+
+.s_nav .closebtn:hover {
+
+
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    margin-right: 153px;
+    border-bottom: none;
+}
+
+
+
+
+.s_nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 111;
+    overflow-x: hidden;
+
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    width: 0;
+
+    position: absolute;
+
+}
+
+.s_nav a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 8px 8px 8px 32px;
+    transition: 0.5s;
+    border: bottom 20px;
+}
+
+.s_nav a:hover {
+    font-size: 20px;
+    color: rgb(255, 2, 2);
+    border-bottom: 2px solid rgb(151, 151, 151);
+}
+
+
+
+
+#s_navayman {
+    width: 100%;
+    display: flex;
+
+    border-bottom: 2px solid rgb(0, 255, 242);
+    justify-content: center;
+    margin-top: 35px;
+    border-bottom: 5px solid red;
+    padding-bottom: px;
+    padding-left: 2px;
+    padding-right: 5px;
+}
+
+#ayman img {
+    width: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#ayman img:hover {
+    filter: drop-shadow(1px 1px 5px rgb(0, 0, 0));
+}
+
+
+
+
+
+
+
+.ayman {
+    height: 80px;
+    width: 1800px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    display: flex;
+    margin-left: 0px;
+}
+
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px 0;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+
+
+}
+
+.container .card {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgb(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgb(255, 255, 255, 0.1),
+        5px 5px 15px rgb(0, 0, 0, 0.3),
+        -5px -5px 15px rgb(255, 255, 255, 0.1);
+
+
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin: 30px;
+    background: rgba(255, 255, 255, 0.048);
+
+    border: 1px solid rgba(245, 245, 245, 0.13);
+
+}
+
+.container .card::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.048);
+
+}
+
+.container .card .box {
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border: 1px solid rgba(245, 245, 245, 0.062);
+    box-shadow: 0 20px 50px rgb(0, 0, 0, 5);
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+
+}
+
+.container .card .box::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.041);
+    pointer-events: none;
+
+}
+
+.container .card .box:hover {
+    border: 1px solid rgba(0, 153, 255, 0.39);
+    transform: translateY(-50px);
+    box-shadow: 0 10px 30px rgba(5, 184, 255, 0.205);
+
+}
+
+.box .span0 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 120px;
+    height: 120px;
+    /*background: red;*/
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box .span0::before {
+    position: absolute;
+    content: 'NEW';
+    font-family: 'poppins', sans-serif;
+
+    width: 150%;
+    height: 40px;
+    background: rgb(255, 0, 0);
+    transform: rotate(-45deg)translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #000000;
+    font-weight: bold;
+    font-size: large;
+
+    letter-spacing: 0.1em;
+
+}
+
+.box .span0::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #ff0000b2;
+    z-index: -1;
+    box-shadow: 110px -110px #ff0000b0;
+}
+
+
+.container .card .box .content {
+
+    padding: 60px;
+    text-align: center;
+}
+
+
+.container .card .box .content .img0 {
+    position: relative;
+    z-index: 10;
+    width: 50px;
+    top: -87px;
+    border: 1px solid white;
+    height: 50px;
+    border-radius: 50%;
+    background: #2a2b2f;
+    transition: .5s;
+    transition-delay: .3s;
+
+
+}
+
+.container:hover .card .box .content .img0 {
+
+    border: 2px solid rgb(255, 0, 85);
+    transform: rotate(360deg);
+    transition: 1s;
+    transition-delay: .3s;
+
+}
+
+
+
+.container .card .box .content .aymanjj {
+
+    background-color: transparent;
+    position: relative;
+    transition: none;
+    border-bottom: none;
+    font-family: 'poppins', sans-serif;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 3px;
+    margin-top: -70px;
+    max-width: 170px;
+    margin-bottom: 10PX;
+
+    border: 1px solid white;
+
+}
+
+.container:hover .card .box .content .aymanjj {
+
+    border: 2px solid rgb(255, 0, 85);
+}
+
+
+.container .card .box .content h4 {
+    font-size: 1.5rem;
+    text-shadow: 0.2px 0.2px 2px rgb(12, 227, 255);
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.884);
+    z-index: 1;
+    transition: 0.5s;
+    text-align: center;
+    font-weight: 500;
+
+
+}
+
+.container .card .box .content h5 {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.671);
+    z-index: 1;
+    transition: 2s;
+    text-align: center;
+    font-weight: 150;
+}
+
+
+.container .card .box .content p {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+
+
+
+.btn1 {
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 8px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    display: flex;
+    overflow: hidden;
+    font-size: 15px;
+    border-radius: 30px;
+
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+
+
+
+}
+
+.btn1 {
+    background: linear-gradient(to right, #05bebefb, #0004ff);
+
+
+}
+
+.btn1::before {
+    content: '';
+
+    position: absolute;
+    height: 100px;
+    width: 20px;
+    background: #f3f3f3;
+    box-shadow: 0 0 10px #fff;
+    filter: blur(1px);
+    opacity: 0.9;
+    top: -30px;
+    left: -10PX;
+    transition: 0.7s;
+    transform: rotate(-20deg) translateX(-60px);
+
+
+}
+
+.btn1:hover::before {
+    transform: rotate(-20deg) translate(140px, 70px);
+
+}
+
+.btn1 .img1 {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    filter: grayscale(0%);
+    bottom: 3px;
+}
+
+.btn1 .img1 :hover {
+    filter: grayscale(100%);
+    filter: drop-shadow(1px 1px 18px rgb(0, 0, 0));
+}
+
+.xclam {
+    text-align: center;
+    transform: translate(0%, 0%);
+    margin-top: 80px;
+    font-family: 'poppins', sans-serif;
+    color: #ffffff;
+}
+
+.xclam img {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 310px;
+    height: 310px;
+    animation: animate 8s linear infinite;
+}
+
+.xclam h3,
+p,
+button {
+    margin: 7px;
+
+}
+
+@keyframes animate {
+
+    0%,
+    10%,
+    100% {
+        filter: drop-shadow(0 0 10px #ff0000)drop-shadow(0 0 40px #ff0000);
+    }
+
+    70%,
+    90% {
+        filter: drop-shadow(0 0 10px #ff0000)drop-shadow(0 0 20px #000000);
+    }
+}
+
+.btnx {
+    background: none;
+    border: 3px solid #ff0000;
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 0%;
+    transition: color 0.4s linear;
+    position: relative;
+    color: #ffffff;
+}
+
+.btnx:hover {
+    color: #fff;
+}
+
+.btnx::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btnx::before {
+    transform: scaleX(0);
+}
+
+.btnx:hover::before {
+    transform: scaleX(1);
+}
+#clock {
+    position: absolute;
+  
+    bottom: 3px;
+    left: 10px;
+    color: #ffffff;
+    font-family: 'poppins', sans-serif;
+    font-style: italic;
+    padding: 5px;
+    width: min-content;
+    font-family: 'poppins', sans-serif;
+}

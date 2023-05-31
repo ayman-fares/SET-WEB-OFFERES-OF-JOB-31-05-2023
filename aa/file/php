@@ -1,0 +1,28 @@
+<?php
+include('config.php');
+$result = mysqli_query($con,"SELECT * FROM login");
+while($row = mysqli_fetch_array($result)){
+echo"
+
+<div  class='dd'  >
+          <center>
+    
+                  
+          <h1>$row[phonnumber]</h1>
+          <br>
+         <h2>$row[password]</h2>
+               
+                  
+                  
+     
+            </center>
+      
+      
+        </div>";
+
+
+
+}
+
+?>
+
